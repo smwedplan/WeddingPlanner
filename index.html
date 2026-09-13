@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.M Weddings | Wedding Planner</title>
+    <meta name="description" content="S.M Weddings - Creating beautiful and unforgettable wedding experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+    <nav class="navbar">
+        <a href="#home" class="logo">S<span>M</span></a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-button">Plan Your Wedding</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <p class="small-title">YOUR LOVE STORY • OUR PASSION</p>
+        <h1>Let's Make Your<br><span>Dream Wedding</span></h1>
+        <p class="hero-text">
+            From intimate celebrations to grand occasions, we create beautiful weddings
+            that you and your loved ones will remember forever.
+        </p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn primary">Start Planning</a>
+            <a href="#gallery" class="btn secondary">View Our Work</a>
+        </div>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Beautiful wedding couple">
+        <div class="experience-box">
+            <strong>10+</strong>
+            <span>Years of<br>Experience</span>
+        </div>
+    </div>
+
+    <div class="about-content">
+        <p class="section-label">ABOUT SM</p>
+        <h2>We Turn Your<br><span>Dreams Into Reality</span></h2>
+        <p>Your wedding is one of the most beautiful moments of your life. Our team takes care of every detail, allowing you to enjoy every precious moment.</p>
+        <p>From venue selection and elegant decorations to photography, catering and entertainment, we make your celebration truly unforgettable.</p>
+        <a href="#services" class="text-link">Discover Our Services →</a>
+    </div>
+</section>
+
+<section class="services section" id="services">
+    <div class="section-heading">
+        <p class="section-label">WHAT WE DO</p>
+        <h2>Everything You Need For<br><span>Your Perfect Day</span></h2>
+        <p>We handle every detail so you can focus on celebrating your love.</p>
+    </div>
+
+    <div class="service-grid">
+        <article class="service-card">
+            <div class="service-icon">💍</div>
+            <h3>Full Wedding Planning</h3>
+            <p>Complete planning and coordination from the first idea to the final celebration.</p>
+            <a href="#contact">Learn More →</a>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">💐</div>
+            <h3>Decor & Styling</h3>
+            <p>Beautiful floral arrangements, themes, lighting and elegant wedding decorations.</p>
+            <a href="#contact">Learn More →</a>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">📸</div>
+            <h3>Photography</h3>
+            <p>Capture every smile, emotion and special moment with our professional photographers.</p>
+            <a href="#contact">Learn More →</a>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">🎶</div>
+            <h3>Entertainment</h3>
+            <p>DJs, live music, performances and entertainment that keep your guests happy.</p>
+            <a href="#contact">Learn More →</a>
+        </article>
+    </div>
+</section>
+
+<section class="gallery section" id="gallery">
+    <div class="section-heading">
+        <p class="section-label">OUR GALLERY</p>
+        <h2>Moments Worth<br><span>Remembering</span></h2>
+    </div>
+
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/img1.jpg" alt="Wedding couple" onclick="openPopup(this)"></div>
+        <div class="gallery-item"><img src="images/img2.jpg" alt="Wedding couple" onclick="openPopup(this)"></div>
+        <div class="gallery-item"><img src="images/img3.jpg" alt="Wedding decoration" onclick="openPopup(this)"></div>
+        <div class="gallery-item"><img src="images/img4.jpg" alt="Wedding ceremony" onclick="openPopup(this)"></div>
+        <div class="gallery-item"><img src="images/img5.jpg" alt="Wedding flowers" onclick="openPopup(this)"></div>
+        <div class="gallery-item"><img src="images/img6.jpg" alt="Wedding table decoration" onclick="openPopup(this)"></div>
+        <div class="gallery-item"><img src="images/img7.jpg" alt="Bride and groom" onclick="openPopup(this)"></div>
+		<div class="gallery-item"><img src="images/img8.jpg" alt="Bride and groom" onclick="openPopup(this)"></div>
+		<div class="gallery-item"><img src="images/img9.jpg" alt="Bride and groom" onclick="openPopup(this)"></div>
+		<div class="gallery-item"><img src="images/img10.jpg" alt="Bride and groom" onclick="openPopup(this)"></div>
+		<div class="gallery-item"><img src="images/img11.jpg" alt="Bride and groom" onclick="openPopup(this)"></div>
+		<div class="gallery-item"><img src="images/img12.jpg" alt="Bride and groom" onclick="openPopup(this)"></div>
+    </div>
+</section>
+
+<div class="popup" id="popup">
+    <button class="popup-close" onclick="closePopup()">×</button>
+    <button class="popup-prev" onclick="changeImage(-1)">❮</button>
+    <img id="popupImage" src="" alt="Wedding gallery image">
+    <button class="popup-next" onclick="changeImage(1)">❯</button>
+</div>
+
+<section class="packages section" id="packages">
+    <div class="section-heading">
+        <p class="section-label">WEDDING PACKAGES</p>
+        <h2>Choose Your<br><span>Perfect Package</span></h2>
+    </div>
+
+    <div class="package-grid">
+        <article class="package-card">
+            <h3>Intimate</h3>
+            <p class="package-description">Perfect for small and elegant celebrations.</p>
+            <div class="price">₹75,000</div>
+            <ul>
+                <li>✓ Wedding consultation</li>
+                <li>✓ Venue assistance</li>
+                <li>✓ Basic decoration</li>
+                <li>✓ Event coordination</li>
+            </ul>
+            <a href="#contact" class="package-button">Choose Package</a>
+        </article>
+
+        <article class="package-card featured">
+            <div class="popular">MOST POPULAR</div>
+            <h3>Classic</h3>
+            <p class="package-description">Everything you need for a beautiful wedding.</p>
+            <div class="price">₹1,50,000</div>
+            <ul>
+                <li>✓ Complete wedding planning</li>
+                <li>✓ Premium decoration</li>
+                <li>✓ Photography</li>
+                <li>✓ Catering coordination</li>
+                <li>✓ Entertainment</li>
+            </ul>
+            <a href="#contact" class="package-button">Choose Package</a>
+        </article>
+
+        <article class="package-card">
+            <h3>Luxury</h3>
+            <p class="package-description">A grand celebration designed without limits.</p>
+            <div class="price">₹3,00,000+</div>
+            <ul>
+                <li>✓ Luxury venue planning</li>
+                <li>✓ Premium floral design</li>
+                <li>✓ Cinematic photography</li>
+                <li>✓ Celebrity entertainment</li>
+                <li>✓ Dedicated planner</li>
+            </ul>
+            <a href="#contact" class="package-button">Choose Package</a>
+        </article>
+    </div>
+</section>
+
+<section class="testimonial section">
+    <div class="section-heading">
+        <p class="section-label">HAPPY COUPLES</p>
+        <h2>Love From Our<br><span>Beautiful Couples</span></h2>
+    </div>
+
+    <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+            <div class="quote">“</div>
+            <p>S.M made our wedding absolutely magical. We didn't have to worry about anything. Everything was perfect!</p>
+            <h4>Priya & Arjun</h4>
+            <span>Chennai</span>
+        </div>
+
+        <div class="testimonial-slide">
+            <div class="quote">“</div>
+            <p>The decorations, photography and coordination were amazing. Our guests are still talking about our wedding!</p>
+            <h4>Ananya & Rahul</h4>
+            <span>Bangalore</span>
+        </div>
+
+        <div class="testimonial-slide">
+            <div class="quote">“</div>
+            <p>Professional, creative and incredibly caring. They understood our vision and made it even more beautiful.</p>
+            <h4>Meera & Karthik</h4>
+            <span>Coimbatore</span>
+        </div>
+
+        <div class="slider-dots">
+            <button onclick="showTestimonial(0)" aria-label="Testimonial 1"></button>
+            <button onclick="showTestimonial(1)" aria-label="Testimonial 2"></button>
+            <button onclick="showTestimonial(2)" aria-label="Testimonial 3"></button>
+        </div>
+    </div>
+</section>
+
+<section class="contact section" id="contact">
+    <div class="contact-info">
+        <p class="section-label">LET'S TALK</p>
+        <h2>Ready To Plan Your<br><span>Dream Wedding?</span></h2>
+        <p>Tell us about your dream wedding. Our wedding planners will get in touch with you and help bring your vision to life.</p>
+
+        <div class="contact-details">
+            <div><strong>📞 Phone</strong><span>+91 90959 89537</span></div>
+            <div><strong>✉️ Email</strong><span>smwedplan@gmail.com</span></div>
+            <div><strong>📍 Location</strong><span>Allithurai, Trichy, Tamil Nadu</span></div>
+        </div>
+    </div>
+
+    
+<form class="contact-form" id="contactForm">
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="your@email.com" required>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="date">Wedding Date</label>
+            <input type="date" id="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" required>
+                <option value="">Select</option>
+                <option>Below 100</option>
+                <option>100 - 300</option>
+                <option>300 - 500</option>
+                <option>500+</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Tell Us About Your Wedding</label>
+        <textarea id="message" rows="5"
+            placeholder="Tell us about your dream wedding..."
+            required></textarea>
+    </div>
+
+    <button type="submit" class="btn primary submit-btn">
+        Send Enquiry 💌
+    </button>
+
+    <p id="formMessage"></p>
+
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const date = document.getElementById("date").value;
+    const guests = document.getElementById("guests").value;
+    const message = document.getElementById("message").value;
+
+    const subject = "Wedding Planner Enquiry - " + name;
+
+    const body =
+        "New Wedding Enquiry\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Email: " + email + "\n" +
+        "Wedding Date: " + date + "\n" +
+        "Number of Guests: " + guests + "\n\n" +
+        "Wedding Details:\n" +
+        message;
+
+    const mailtoLink =
+        "mailto:smwedplan@gmail.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailtoLink;
+
+});
+</script>
+
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <a href="#home" class="logo">S<span>M</span></a>
+            <p>Creating beautiful love stories, one wedding at a time.</p>
+        </div>
+
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Pinterest</a>
+        </div>
+    </div>
+
+    <div class="copyright">© 2026 S.M Weddings. All Rights Reserved.</div>
+</footer>
+
+<button id="topBtn" class="top-btn" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
